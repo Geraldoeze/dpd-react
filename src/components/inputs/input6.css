@@ -1,0 +1,172 @@
+.btn_coverSkip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_cover {
+}
+
+.input_text {
+  height: 2.5rem;
+  width: 100%;
+  background: #f4f4f4;
+  border: 1px solid rgba(214, 98, 51, 0.2);
+  border-radius: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #343434;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.btn_skip {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.skip {
+  height: 2.5rem;
+  width: 22%;
+  background: rgba(214, 98, 51, 0.1);
+  border: 1px solid #d66233;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13.504px;
+  line-height: 15px;
+  color: #d66233;
+  text-align: center;
+}
+
+.skip:hover {
+  background: #d661336e;
+  border: 0;
+  
+}
+
+.btn_next {
+  height: 2.5rem;
+  width: 75%;
+  background: #d66233;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13.504px;
+  line-height: 15px;
+  color: #dee1e2;
+  text-align: center;
+}
+
+.btn_name {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14.4265px;
+  line-height: 18px;
+  font-size: 16px;
+  text-align: left;
+  color: #2c393f;
+  margin: 2rem 0 1rem 0;
+}
+
+.btn_name span {
+  font-weight: 700;
+  margin: 0 8px;
+}
+
+.btn_name button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.drop_skill {
+  height: 1.7rem;
+  width: 50%;
+  margin: 0.3rem auto;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #343434;
+  color: #2c393f;
+
+  border-radius: 20px;
+}
+
+.drop_skill:hover {
+  border: 1px solid #d66233;
+  color: #d66233;
+  background: #d6613394;
+}
+
+.btn_contain {
+  margin: 1rem 0;
+  width: 90%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn_keys {
+  background: rgba(214, 98, 51, 0.1);
+  height: 2.5rem;
+  border: 1px solid #d66233;
+  color: #d66233;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_keys input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.btn_keys:hover {
+  background: #d6613394;
+  border: 1px solid #d6613394;
+}
+
+.bg_change {
+  background: purple;
+}
+
+@media (max-width: 650px) {
+  .btn_contain {
+    margin: 1rem 2rem;
+    width: 100%;
+    grid-template-columns: 120px 120px;
+  }
+  .btn_name {
+    text-align: center;
+  }
+  .btn_name span {
+    display: block;
+    margin: 0.6rem 5px;
+  }
+  .btn_skip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .drop_skill {
+    width: 80%;
+  }
+  .skip {
+    width: 100px;
+    margin: 1rem 0;
+  }
+  .btn_next {
+    margin: 0 0 1rem 0;
+  }
+}

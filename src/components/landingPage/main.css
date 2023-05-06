@@ -1,0 +1,245 @@
+.main_style {
+  background-image: url("/public/assets/home/dashboard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  padding: 1rem 3rem;
+}
+
+.main_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_btn {
+  height: 45px;
+  width: 153px;
+  background: #d66233;
+  border-radius: 16px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 141%;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 4px;
+  
+}
+
+.main_text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #404e57;
+}
+
+.main_images {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.main_images img {
+  cursor: pointer;
+}
+
+.main_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding: 1rem;
+}
+
+.bottom1 {
+  margin: auto 0;
+}
+
+.content_style {
+  background: #faece7;
+  padding: 0.2rem;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+}
+
+.content_arrows {
+  display: flex;
+}
+
+.arrow_con {
+  width: 8%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.arrow_container {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  margin-right: 1rem;
+}
+
+
+.arrow_items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.arrow_num {
+  width: 50px;
+  height: 50px;
+  background: #d66233;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.arrow {
+  margin: auto;
+  width: 60%;
+}
+
+.content_text {
+  width: 80%;
+  text-align: left;
+}
+
+.text_header {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+
+.text_content {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+
+@media (max-width: 650px) {
+  .main_style {
+    padding: 1rem;
+    min-height: 60vh;
+  }
+
+  .main_links img {
+    width: 50%;
+  }
+  .main_btn {
+    width: 35%;
+    height: 2.7rem;
+    font-size: 14px;
+    padding: 0;
+  }
+  .main_text {
+    font-size: 22px;
+    width: 90%;
+    line-height: 29px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .main_images {
+    width: 90%;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .main_images img {
+    width: 60%;
+    margin-right: 1rem;
+  }
+  .main_bottom {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .bottom1 {
+    text-align: left;
+  }
+  .bottom1 img {
+    width: 40%;
+  }
+
+  .bottom2 img {
+    width: 50px;
+  }
+  .content_style {
+    padding: 0;
+    width: 100%;
+    
+  }
+  .content_arrows {
+    padding: 1rem 0;
+    width: 75%;
+    flex-direction: column;
+  }
+ 
+  .arrow_con {
+    display: none;    
+  }
+ 
+  .arrow {
+    display: none;
+  }
+
+  .content_style {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow_items {
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow_num {
+    width: 40px;
+    height: 40px;
+  }
+  .arrow_container {
+    width: 100%;    
+    margin-right: 0;
+    
+  }
+
+  .content_text {
+    width: 100%;
+    text-align: center;
+  }
+  .text_header {
+    margin: 1rem 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .text_content {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+  line-height: 16px;
+  }
+}
+

@@ -1,0 +1,146 @@
+.input_Container {
+  background-image: url("/public/assets/inputs/bgImage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: initial;
+  padding: 5px;
+}
+
+.input_Image {
+  margin: 1rem 0 1.5rem 0;
+}
+.input_Image img {
+  width: 150px;
+}
+
+.input_Holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 52.5px;
+  gap: 8.5px;
+
+  /* width: 666px; */
+  width: 30%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+input {
+  outline: none;
+}
+
+.header {
+  margin: 0.4rem auto;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  color: #2c393f;
+}
+
+.sub {
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.subText {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: left;
+  margin: 0 0 1.5rem 0;
+  text-transform: capitalize;
+  color: #2c393f;
+}
+
+.btn_cover {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_input {
+  height: 3rem;
+  width: 80%;
+  background: #d66233;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13.504px;
+  line-height: 15px;
+  color: #dee1e2;
+  text-align: center;
+}
+
+.size {
+  width: 65%;
+}
+
+.error_text {
+  margin: 0.5rem 0;
+  color: red;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13.504px;
+  line-height: 15px;
+}
+
+.btn_back {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13.504px;
+  line-height: 15px;
+  text-align: center;
+  color: #212121;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn_back img {
+  margin: 0 0.3rem;
+}
+
+.footer_bottom {
+  margin: 2rem;
+}
+
+@media (max-width: 650px) {
+  .input_Container {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .input_Holder {
+    width: 80%;
+    padding: 1rem 1.5rem;
+  }
+  .header {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .subText {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
