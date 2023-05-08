@@ -5,6 +5,7 @@
   background-size: cover;
   min-height: 80vh;
   padding: 1rem 3rem;
+  z-index: -2;
 }
 
 .main_links {
@@ -69,6 +70,7 @@
   padding: 0.2rem;
   min-height: 460px;
   display: flex;
+  z-index: 100;
   align-items: center;
 }
 
