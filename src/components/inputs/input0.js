@@ -51,7 +51,7 @@ const InputZero = () => {
     <div>
       <div className="header">What do you want to do?</div>
       <div className="">
-        <label className="container">
+        <label className="container grow">
           Outsource a task to a single consultant
           
           <input
@@ -64,7 +64,7 @@ const InputZero = () => {
           <span className="checkmark pro"></span>
         </label>
 
-        <label className="container">
+        <label className="container grow">
           Outsource a project to a team
           <input
             type="checkbox"
@@ -76,7 +76,7 @@ const InputZero = () => {
           <span className="checkmark pro"></span>
         </label>
 
-        <label className="container">
+        <label className="container grow">
           Hire a talent for a role in your organization
           <input
             type="checkbox"

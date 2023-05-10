@@ -12,7 +12,7 @@
   margin: 2rem 0 4rem 0;
 }
 .input_Image img {
-  width: 50px;
+  width: 40px;
 }
 
 .input_Holder {
@@ -86,6 +86,12 @@ input {
   margin-bottom: 1rem;
 }
 
+.btn_input:hover {
+   background: transparent;
+   border: 1px solid #d66233;
+   color: #d66233;
+}
+
 .size {
   width: 65%;
 }
@@ -123,7 +129,7 @@ input {
   margin: 2rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .input_Holder {
     width: 70%;
     padding: 1rem 1.5rem;

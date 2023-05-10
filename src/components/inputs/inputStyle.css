@@ -47,7 +47,6 @@
   padding-left: 35px;
   margin-bottom: 30px;
   cursor: pointer;
-  font-size: 12px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -60,6 +59,10 @@
   line-height: 22px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.grow {
+  margin: 40px 0;
 }
 
 .span_text {

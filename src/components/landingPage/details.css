@@ -62,9 +62,15 @@
   height: 55px;
   border: 1px solid #d66233;
   border-radius: 16px;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
+.detail_btn:hover {
+  background: #d66233;
+  color: #fff;
+
+}
 @media (max-width: 650px) { 
   .detail_cover {
     width: 65%;

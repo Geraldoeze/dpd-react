@@ -54,7 +54,7 @@ const InputThree = () => {
     <div>
       <div className="header sub">Do you have task/product specifications ready?</div>
       <div className="">
-        <label className="container">
+        <label className="container grow">
         I have a rough idea of what I want to do
           <input
             type="checkbox"
@@ -65,7 +65,7 @@ const InputThree = () => {
           <span className="checkmark pro"></span>
         </label>
 
-        <label className="container">
+        <label className="container grow">
         I have a clear idea of what I want to do, but I do not have written specifications ready.
           <input
             type="checkbox"
@@ -76,7 +76,7 @@ const InputThree = () => {
           <span className="checkmark pro"></span>
         </label>
 
-        <label className="container">
+        <label className="container grow">
         I have clear written specifications ready.
           <input
             type="checkbox"
