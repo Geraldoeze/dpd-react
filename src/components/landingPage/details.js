@@ -19,7 +19,7 @@ const Details = ({ detailNum, onClose }) => {
             <img alt="icon" src="/assets/home/Vector.png" />
           </div>
           <div className="detail_content">
-            <img alt="icon" src="/assets/home/image1.png" width="100%" />
+            <img alt="icon" src="/assets/home/image1.png" width="80%" />
             <h3>Single Sourcing</h3>
             <p>
               Implementing a single sourcing strategy can provide several
@@ -51,7 +51,7 @@ const Details = ({ detailNum, onClose }) => {
             <img alt="icon" src="/assets/home/Vector.png" />
           </div>
           <div className="detail_content">
-            <img alt="icon" src="/assets/home/image2.png" width="100%" />
+            <img alt="icon" src="/assets/home/image2.png" width="80%" />
             <h3>Team Sourcing</h3>
             <p>
               Building a team with diverse skill sets can help you take your
@@ -84,7 +84,7 @@ const Details = ({ detailNum, onClose }) => {
             <img alt="icon" src="/assets/home/Vector.png" />
           </div>
           <div className="detail_content">
-            <img alt="icon" src="/assets/home/image3.png" width="100%" />
+            <img alt="icon" src="/assets/home/image3.png" width="80%" />
             <h3>Hiring a Consultant</h3>
             <p>
               Engaging a consultant can provide specialized expertise and

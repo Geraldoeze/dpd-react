@@ -30,9 +30,9 @@ function Main() {
           Do Today?
         </div>
         <div className="main_images">
-          <img onMouseLeave={closeInfo} onMouseEnter={() => showInfo(1)} alt="img" src="/assets/home/img1.png" width="30%" />
-          <img onMouseLeave={closeInfo} onMouseEnter={() => showInfo(2)} alt="img" src="/assets/home/img2.png" width="30%" />
-          <img onMouseLeave={closeInfo} onMouseEnter={() => showInfo(3)} alt="img" src="/assets/home/img3.png" width="30%" />
+          <img  onMouseEnter={() => showInfo(1)} alt="img" src="/assets/home/img1.png" width="30%" />
+          <img  onMouseEnter={() => showInfo(2)} alt="img" src="/assets/home/img2.png" width="30%" />
+          <img  onMouseEnter={() => showInfo(3)} alt="img" src="/assets/home/img3.png" width="30%" />
         </div>
         <div className="main_bottom">
           <div className="bottom1">

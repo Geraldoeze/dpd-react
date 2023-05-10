@@ -1,4 +1,5 @@
 import { useState, createContext } from "react";
+import axios from 'axios';
 // import InputOne from "./Input1";
 import InputTwo from "./Input2";
 import InputThree from "./input3";
@@ -17,6 +18,10 @@ const InputContainer = () => {
   const [data, setData] = useState([]);
   const [number, setNumber] = useState(1);
   console.log(data, number);
+
+  const sendRequest = () => {
+    axios.post('', {}).then(res => console.log(res))
+  }
   return (
     <PostContext.Provider value={{ data, setData, number, setNumber }}>
       <div className="input_Container">
