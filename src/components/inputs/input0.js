@@ -51,19 +51,18 @@ const InputZero = () => {
     <div>
       <div className="header">What do you want to do?</div>
       <div className="">
-        <label className="container grow">
-          Outsource a task to a single consultant
-          
+      <label className="container grow">
+      Outsource a task to a single consultant
           <input
-            type="checkbox "
+            type="checkbox"
             id="check1"
             onClick={handleChange}
             name="client"
-            value="developer"
+            defaultValue="Outsource a task to single consultant"
           />
           <span className="checkmark pro"></span>
         </label>
-
+      
         <label className="container grow">
           Outsource a project to a team
           <input
@@ -71,7 +70,7 @@ const InputZero = () => {
             id="check2"
             onClick={handleChange}
             name="client"
-            value="designers"
+            defaultValue="Outsource a project to a team"
           />
           <span className="checkmark pro"></span>
         </label>
@@ -83,7 +82,7 @@ const InputZero = () => {
             id="check3"
             onClick={handleChange}
             name="client"
-            value="project manager"
+            defaultValue="Hire a talent for a role"
           />
           <span className="checkmark pro"></span>
         </label>

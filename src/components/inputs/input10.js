@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import axios from 'axios';
 import { PostContext } from ".";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -17,6 +18,7 @@ const InputOne = () => {
   const submitHandler = () => {
     const body = {...data, contact: values}
     console.log(body);
+    axios.post('https://dpd-online-server.herokuapp.com/v1/user/client-meta-details', body).then(res => console.log(res)).catch(err => console.log(err));
   }
 
 

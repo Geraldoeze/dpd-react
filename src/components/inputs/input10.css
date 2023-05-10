@@ -59,6 +59,12 @@
     
 }
 
+.btn_line:hover {
+  background: transparent;
+  color: #d66233;
+  border: 1px solid #d66233;
+}
+
 .phone_input {
   margin-bottom:1rem ;
 }
