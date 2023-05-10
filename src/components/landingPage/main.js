@@ -18,9 +18,9 @@ function Main() {
         <div className="main_links">
           <img
             alt="icon"
-            src="/assets/home/imageIcon.png"
-            width="264px"
-            height="76px"
+            src="/assets/home/png.png"
+            width="64px"
+            height="70px"
           />
           <button className="main_btn">Sign In</button>
         </div>

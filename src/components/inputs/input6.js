@@ -101,7 +101,7 @@ console.log(changer, id)
             <span>
               {" "}
               {values.name}{" "}
-              <button onClick={() => setShow(true)}>
+              <button >
                 <img alt="" src="/assets/home/downArr.png" />
               </button>{" "}
             </span>

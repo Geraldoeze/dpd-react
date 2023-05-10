@@ -9,10 +9,10 @@
 }
 
 .input_Image {
-  margin: 1rem 0 1.5rem 0;
+  margin: 2rem 0 4rem 0;
 }
 .input_Image img {
-  width: 150px;
+  width: 50px;
 }
 
 .input_Holder {
@@ -22,9 +22,9 @@
   justify-content: center;
   padding: 20px 52.5px;
   gap: 8.5px;
-
-  /* width: 666px; */
-  width: 30%;
+  min-height: 30vh;
+  /* width: 366px; */
+  width: 30vw;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(20.5px);
   /* Note: backdrop-filter has minimal browser support */
@@ -39,13 +39,13 @@ input {
 }
 
 .header {
-  margin: 0.4rem auto;
+  margin: 1rem auto;
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-transform: capitalize;
   color: #2c393f;
 }
@@ -83,6 +83,7 @@ input {
   line-height: 15px;
   color: #dee1e2;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .size {
@@ -120,6 +121,13 @@ input {
 
 .footer_bottom {
   margin: 2rem;
+}
+
+@media (max-width: 850px) {
+  .input_Holder {
+    width: 70%;
+    padding: 1rem 1.5rem;
+  }
 }
 
 @media (max-width: 650px) {
