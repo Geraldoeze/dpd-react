@@ -8,6 +8,7 @@ import "./input10.css";
 
 const InputOne = () => {
   const { data, setNumber } = useContext(PostContext);
+  const [choose, setChoose] = useState(false);
   const [values, setValues] = useState({
     phone: "",
     email: "",
@@ -18,9 +19,14 @@ const InputOne = () => {
   const submitHandler = () => {
     const body = {...data, contact: values}
     console.log(body);
-    axios.post('https://dpd-online-server.herokuapp.com/v1/user/client-meta-details', body).then(res => console.log(res)).catch(err => console.log(err));
+    axios.post('https://dpd-online-server.herokuapp.com/v1/user/client-meta-details', body)
+    .then(res => window.location.replace('https://app.dpdonline.ng/signup?type=client') )
+    .catch(err => {
+      setChoose(true);
+      console.log(err)
+    });
   }
-
+// https://app.dpdonline.ng/signup?type=client
 
   return (
     <div className="success_cover">
@@ -39,7 +45,7 @@ const InputOne = () => {
             onChange={num => setValues({...values, phone: num })}
             />
         </div>
-        
+        {choose && <p className="error_text">Something went wrong. </p>}
       </div>
       <div>
         <div className="terms">
