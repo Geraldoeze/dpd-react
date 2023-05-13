@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import "./details.css";
 
 const Details = ({ detailNum, onClose }) => {
+  const navigate = useNavigate();
+  const hireTeam = () => {
+    navigate("/team", {replace: true})
+  }
   return (
     <>
       {detailNum === 1 && (
@@ -31,7 +36,7 @@ const Details = ({ detailNum, onClose }) => {
               documentation is up-to-date, as you only need to update the
               information in one place.
             </p>
-            <button className="detail_btn">Hire a Talent</button>
+            <button className="detail_btn" onClick={hireTeam}>Hire a Talent</button>
           </div>
         </motion.div>
       )}
@@ -64,7 +69,7 @@ const Details = ({ detailNum, onClose }) => {
               flexibility and adaptability, allowing you to tackle any
               challenges that may arise.
             </p>
-            <button className="detail_btn">Hire a Talent</button>
+            <button className="detail_btn" onClick={hireTeam}>Hire a Talent</button>
           </div>
         </motion.div>
       )}
@@ -95,7 +100,7 @@ const Details = ({ detailNum, onClose }) => {
               improvement. Finally, it can be a cost-effective solution, as you
               can engage
             </p>
-            <button className="detail_btn">Hire a Consultant</button>
+            <button className="detail_btn" onClick={hireTeam}>Hire a Consultant</button>
           </div>
         </motion.div>
       )}
