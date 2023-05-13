@@ -16,9 +16,10 @@ const InputOne = () => {
     company: ""
   });
  
-  const submitHandler = () => {
+  const submitHandler = (e) => {
+    e.preventDefault();
     const body = {...data, contact: values}
-    console.log(body);
+    console.log(body, '32e');
     axios.post('https://dpd-online-server.herokuapp.com/v1/user/client-meta-details', body)
     .then(res => window.location.replace('https://app.dpdonline.ng/signup?type=client') )
     .catch(err => {
@@ -30,11 +31,12 @@ const InputOne = () => {
 
   return (
     <div className="success_cover">
+      <form onSubmit={submitHandler}>
       <div className="header sub">Success! Let's connect you with talent.</div>
       <div className="phone_input">
-        <input type="text" className="text_input" placeholder="Company Email" onChange={(e) => setValues({...values, email: e.target.value})} />
-        <input type="text" className="text_input" placeholder="Company Name" onChange={(e) => setValues({...values, company: e.target.value})} />
-        <input type="text" className="text_input" placeholder="Contact Name" onChange={(e) => setValues({...values, name: e.target.value})} />
+        <input type="email" className="text_input" required placeholder="Company Email" onChange={(e) => setValues({...values, email: e.target.value})} />
+        <input type="text" className="text_input" required placeholder="Company Name" onChange={(e) => setValues({...values, company: e.target.value})} />
+        <input type="text" className="text_input" required placeholder="Contact Name" onChange={(e) => setValues({...values, name: e.target.value})} />
         <div className="">
           <PhoneInput 
             containerStyle={{}}
@@ -54,8 +56,9 @@ const InputOne = () => {
           and that DPD may monitor or record audio or video calls for quality
           assurance and training purposes.
         </div>
-        <button type="submit" onClick={submitHandler} className="btn_line" >Connect Me With Talent</button>
+        <button type="submit" className="btn_line" >Connect Me With Talent</button>
       </div>
+      </form>
     </div>
   );
 };
